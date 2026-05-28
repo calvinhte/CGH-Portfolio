@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <img src="images/Logo.png" alt="Portfolio Logo" class="nav-brand" onclick="scrollToSection('hero')">
+        <ul>
+            <li><a onclick="scrollToSection('hero')">Home</a></li>
+            <li><a onclick="scrollToSection('about')">About</a></li>
+            <li><a onclick="scrollToSection('works')">Works</a></li>
+            <li><a onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <!-- Decorative Shapes -->
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm Calvin Hate</h1>
+                <p>
+                Information Technology undergraduate blending multimedia creativity with intuitive UI/UX design 
+                to build digital experiences that balance creativity and functionality.
+                </p>    
+                <div class="hero-buttons">
+                    <button class="cta-button" onclick="scrollToSection('contact')">Get in touch</button>
+                    <a href="CV/RESUME.pdf" download="RESUME FINAL.pdf" class="cta-button secondary-btn">
+                        <i class="fas fa-file-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="creative-frame">
+                    <img src="images/SELF.png" alt="Profile photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-inner">
+            <h2 class="scroll-animate slide-up">About me</h2>
+            <div class="about-grid">
+                <div class="about-text scroll-animate slide-left">
+                    <p> Hi! I'm Calvin Hate, an aspiring Information Technology professional passionate about exploring UI/UX, front-end development 
+                        and multimedia while continuously developing my skills in creating intuitive and visually engaging digital experiences. 
+                        With a blend of creativity and technical knowledge, I enjoy exploring design ideas,
+                        solving user-focused challenges, and continuously improving my skills in digital design and user experience.</p>
+                    <p> My approach combines user research, visual design, and wireframing to deliver meaningful solutions.</p>
+                    <p> My goal is to create meaningful and efficient digital experiences while 
+                        continuously improving my skills and adapting to new industry trends. Whether developing websites, designing interfaces, 
+                        or experimenting with new ideas, I’m always eager to learn, create, and innovate.
+                        I enjoy working on creative projects that challenge both my technical and design abilities.
+                        I strive to combine creativity with functionality in everything I create, aiming to deliver 
+                        designs and solutions that are both visually engaging and user-friendly.</p>                  
+                    <p> While I have an interest in UI/UX, Front End development and multimedia, I’m also eager to explore other areas in the IT field
+                        such as QA testing, IT support, Data Analyst to continuously broaden my experience and skill set.</p>
+                </div>
+                <div class="about-skills">
+                    <h3 class="scroll-animate slide-right">Skills &amp; Tools</h3>
+                    <p class="scroll-animate slide-right" style="transition-delay: 0.1s">The tools and technologies below help me turn ideas into functional and engaging digital experiences:</p>
+                    <div class="skills-container scroll-animate slide-right" style="transition-delay: 0.2s">
+                        <div class="skill-category">
+                            <h4><i class="fas fa-code"></i> Development</h4>
+                            <div class="skills-grid">
+                                <div class="skill-item"><i class="fab fa-html5"></i> <span>HTML</span></div>
+                                <div class="skill-item"><i class="fab fa-css3-alt"></i> <span>CSS</span></div>
+                                <div class="skill-item"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+                                <div class="skill-item"><i class="fab fa-react"></i> <span>ReactJs</span></div>
+                                <div class="skill-item"><i class="fas fa-bolt"></i> <span>Vite</span></div>
+                                <div class="skill-item"><i class="fab fa-php"></i> <span>PHP</span></div>
+                                <div class="skill-item"><i class="fas fa-database"></i> <span>MySQL</span></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4><i class="fas fa-palette"></i> Design</h4>
+                            <div class="skills-grid">
+                                <div class="skill-item"><i class="fas fa-pen-nib"></i> <span>UI/UX Design</span></div>
+                                <div class="skill-item"><i class="fab fa-figma"></i> <span>Figma</span></div>
+                                <div class="skill-item"><i class="fas fa-object-group"></i> <span>Canva</span></div>
+                                <div class="skill-item"><i class="fas fa-border-all"></i> <span>Wireframing</span></div>
+                                <div class="skill-item"><i class="fas fa-desktop"></i> <span>Web Design</span></div>
+                                <div class="skill-item"><i class="fas fa-image"></i> <span>Adobe PS</span></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4><i class="fas fa-tasks"></i> Process &amp; Research</h4>
+                            <div class="skills-grid">
+                                <div class="skill-item"><i class="fas fa-users"></i> <span>Agile (Scrum &amp; XP)</span></div>
+                                <div class="skill-item"><i class="fas fa-search"></i> <span>User Research</span></div>
+                                <div class="skill-item"><i class="fas fa-comments"></i> <span>Communication</span></div>
+                                <div class="skill-item"><i class="fas fa-file-alt"></i> <span>Documentation</span></div>
+                                <div class="skill-item"><i class="fab fa-github"></i> <span>GitHub</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Separator -->
+    <div class="section-separator"></div>
+
+    <!-- Works Section -->
+    <section id="works">
+        <h2 class="scroll-animate slide-up">My works</h2>
+        <div class="works-grid">
+            <div class="scroll-animate slide-up" style="transition-delay: 0.1s; height: 100%;">
+                <div class="work-card" style="height: 100%;">
+                    <div class="work-image">
+                        <img src="images/work1cover.png" alt="MyHakbang">
+                    </div>
+                    <div class="work-info">
+                        <h3>MyHakbang</h3>
+                        <p>Project under Capstone 1</p>
+                        <a href="#" class="work-link" onclick="openModal('modal-myhakbang'); return false;">View project →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-animate slide-up" style="transition-delay: 0.2s; height: 100%;">
+                <div class="work-card" style="height: 100%;">
+                    <div class="work-image">
+                        <img src="images/a1.png" alt="Attendify">
+                    </div>
+                    <div class="work-info">
+                        <h3>Attendify</h3>
+                        <p>Software development Subject Project</p>
+                        <a href="#" class="work-link" onclick="openModal('modal-attendify'); return false;">View project →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-animate slide-up" style="transition-delay: 0.3s; height: 100%;">
+                <div class="work-card" style="height: 100%;">
+                    <div class="work-image">
+                        <img src="images/cu2.1.jpg" alt="COFFEE US">
+                    </div>
+                    <div class="work-info">
+                        <h3>Coffee Us Cafe</h3>
+                        <p>Web Development Project</p>
+                        <a href="#" class="work-link" onclick="openModal('modal-coffeeus'); return false;">View project →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-animate slide-up" style="transition-delay: 0.4s; height: 100%;">
+                <div class="work-card" style="height: 100%;">
+                    <div class="work-image">
+                        <img src="images/wf.png" alt="Figma Wireframes">
+                    </div>
+                    <div class="work-info">
+                        <h3>Figma Wireframes</h3>
+                        <p>Sample wireframes</p>
+                        <a href="#" class="work-link" onclick="openModal('modal-figma'); return false;">View project →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-animate slide-up" style="transition-delay: 0.5s; height: 100%;">
+                <div class="work-card" style="height: 100%;">
+                    <div class="work-image">
+                        <img src="images/DA.png" alt="Digital Designs">
+                    </div>
+                    <div class="work-info">
+                        <h3>Digital Designs</h3>
+                        <p>My Digital Artworks</p>
+                        <a href="#" class="work-link" onclick="openModal('modal-digital'); return false;">View project →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-animate slide-up" style="transition-delay: 0.6s; height: 100%;">
+                <div class="work-card" style="height: 100%;">
+                    <div class="work-image">
+                        <img src="images/ad1.png" alt="App Dev Survey System">
+                    </div>
+                    <div class="work-info">
+                        <h3>Survey System</h3>
+                        <p>Application Development Subject Project</p>
+                        <a href="#" class="work-link" onclick="openModal('modal-appdev'); return false;">View project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <!-- Decorative Shapes -->
+        <div class="floating-shape shape-5"></div>
+        <div class="floating-shape shape-6"></div>
+        <div class="floating-shape shape-7"></div>
+        <div class="floating-shape shape-8"></div>
+
+        <div class="contact-content">
+            <h2>Let's work together</h2>
+            <p>I'm always interested in hearing about new projects and design challenges.</p>
+            <button class="cta-button" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=hatecalvin17@gmail.com', '_blank')">Send me an email</button>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/hatecalvin21" class="social-icon linkedin" title="LinkedIn" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hatecalvin17@gmail.com" class="social-icon gmail" title="Gmail" target="_blank">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://github.com/calvinhte" class="social-icon github" title="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://facebook.com/calvin.gonzaleshate" class="social-icon facebook" title="Facebook" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Calvin Hate</p>
+    </footer>
+
+    <!-- Project Modal (MyHakbang) -->
+    <div id="modal-myhakbang" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-myhakbang')"><i class="fas fa-times"></i></span>
+            <div class="modal-body">
+                <h3 class="modal-title">MyHakbang - Capstone Project</h3>
+                <p>MyHakbang is an AI-assisted, mobile-compliant web-based appointment and records management
+                    system developed for Hakbang Center for Child Development. The system was designed to centralize 
+                    appointment scheduling, patient records management, and administrative operations into a single digital platform, 
+                    improving the efficiency and accessibility of clinic services.
+                    The platform allows patients and parents to conveniently book appointments online through a 
+                    web-based and mobile-friendly interface. It also integrates artificial intelligence 
+                    features such as chatbot-assisted inquiries and Clinical Decision Support System (CDSS) 
+                    support for therapists, helping streamline communication, assist with preliminary assessments, 
+                 and support patient progress tracking.</p>
+                <p><strong>My Role:</strong> I served as the Communications and Documentation Lead. This role involved 
+                    coordinating communication between team members, stakeholders, and clients to ensure
+                    smooth project execution. I was responsible for documenting project requirements, 
+                    manuscript, development processes, meetings and testing outcomes. 
+                    Beyond my primary role, I was involved in the technical implementation. I 
+                    specifically coded and designed the AI Chatbot using the Dialogflow API with 
+                    Tiered Response System (TRS). It is an AI-assisted chatbot mechanism that 
+                    classifies and handles user inquiries across multiple response levels. 
+                    It begins with automated responses for common queries and progressively escalates 
+                    complex or concerns to admin personnel.</p>
+                
+                <h4 class="modal-subtitle">
+                    <span>System Previews</span>
+                    <a href="https://myhakbang.site" target="_blank" class="cta-button figma-btn">
+                        <i class="fas fa-external-link-alt"></i> Visit myhakbang.site
+                    </a>
+                </h4>
+                <div class="modal-gallery">
+                    <img src="images/c1.png" alt="System Preview 1" onclick="openImageViewer(this.src)">
+                    <img src="images/c2.png" alt="System Preview 2" onclick="openImageViewer(this.src)">
+                    <img src="images/c3.png" alt="System Preview 3" onclick="openImageViewer(this.src)">
+                    <img src="images/c4.png" alt="System Preview 4" onclick="openImageViewer(this.src)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal (Attendify) -->
+    <div id="modal-attendify" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-attendify')"><i class="fas fa-times"></i></span>
+            <div class="modal-body">
+                <h3 class="modal-title">Attendify</h3>
+                <p>Attendify is a software development project designed to digitalize faculty attendance tracking across the campus. The system allows designated checkers or personnel to monitor and verify professors’ attendance through a more efficient and organized digital process.</p>
+                <p>Instead of using traditional paper-based attendance signing, Attendify utilizes image-based verification by capturing classroom photos with the professor present during scheduled class hours. This helps confirm whether professors are present or absent while reducing manual paperwork and improving the accuracy of attendance monitoring.</p>
+                <p><strong>My Role:</strong> We the KDC group, four member group created this project. I was responsible in assisting the Backend functionality of this project and helped fix the user interface as well.</p>
+                
+                <h4 class="modal-subtitle">System Previews</h4>
+                <div class="modal-gallery">
+                    <img src="images/a1.png" alt="Attendify Preview 1" onclick="openImageViewer(this.src)">
+                    <img src="images/a2.png" alt="Attendify Preview 2" onclick="openImageViewer(this.src)">
+                    <img src="images/a3.png" alt="Attendify Preview 3" onclick="openImageViewer(this.src)">
+                    <img src="images/a4.png" alt="Attendify Preview 4" onclick="openImageViewer(this.src)">
+                    <img src="images/a5.png" alt="Attendify Preview 5" onclick="openImageViewer(this.src)">
+                    <img src="images/a6.jpg" alt="Attendify Preview 6" onclick="openImageViewer(this.src)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal (COFFEE US) -->
+    <div id="modal-coffeeus" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-coffeeus')"><i class="fas fa-times"></i></span>
+            <div class="modal-body">
+                <h3 class="modal-title">Coffee US Cafe – Business Information Website</h3>
+                <p>Coffee US Cafe is a small outdoor coffee shop business owned and managed by a couple. The café offers a wide variety of beverages and creates a cozy and welcoming environment for customers. In addition to their regular operations, they also participate in small pop-up events and local gatherings.</p>
+                <p>This was a two-person project focused on creating an informational website that showcases the café’s products, brand identity, and contact information. My contributions included designing the website interface, developing the front-end components, and assisting with the project documentation. The website was created to help strengthen the café’s online presence and make information more accessible to customers.</p>
+                
+                <h4 class="modal-subtitle">System Previews</h4>
+                <div class="modal-gallery">
+                    <img src="images/cu1.jpg" alt="Coffee US Preview 1" onclick="openImageViewer(this.src)">
+                    <img src="images/cu2.jpg" alt="Coffee US Preview 2" onclick="openImageViewer(this.src)">
+                    <img src="images/cu3.jpg" alt="Coffee US Preview 3" onclick="openImageViewer(this.src)">
+                    <img src="images/cu4.jpg" alt="Coffee US Preview 4" onclick="openImageViewer(this.src)">
+                    <img src="images/cu5.jpg" alt="Coffee US Preview 5" onclick="openImageViewer(this.src)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal (Figma Wireframes) -->
+    <div id="modal-figma" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-figma')"><i class="fas fa-times"></i></span>
+            <div class="modal-body">
+                <h3 class="modal-title">Figma Wireframes and UI/UX Designs</h3>
+                <p>This section showcases my wireframes and UI/UX design projects created using Figma. These designs demonstrate my approach to layout planning, interface organization, user experience considerations, and responsive design concepts. The wireframes were developed for various academic and personal projects as part of the design and planning phase before implementation and development.</p>
+                
+                <h4 class="modal-subtitle">
+                    <span>Interactive Prototype: HCI Project</span>
+                    <a href="https://www.figma.com/design/pA84nDOfmjRg08nLAeP6SZ/HATE_Calvin_HCI-PROJECT--Copy-?node-id=0-1&t=9PvklK9zb9wYlIYg-1" target="_blank" class="cta-button figma-btn">
+                        <i class="fab fa-figma"></i> Open in Figma
+                    </a>
+                </h4>
+                <div class="figma-embed-container">
+                    <iframe style="border: none;" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FpA84nDOfmjRg08nLAeP6SZ%2FHATE_Calvin_HCI-PROJECT--Copy-%3Fnode-id%3D0-1%26t%3D9PvklK9zb9wYlIYg-1" allowfullscreen></iframe>
+                </div>
+
+                <h4 class="modal-subtitle">
+                    <span>Interactive Prototype: Coffee US</span>
+                    <a href="https://www.figma.com/design/1lL3CcJxd4aCE1kVUGKzaJ/COFFEE-US-WEBSITE?node-id=0-1&t=ewlAgQcCsL5rFtu1-1" target="_blank" class="cta-button figma-btn">
+                        <i class="fab fa-figma"></i> Open in Figma
+                    </a>
+                </h4>
+                <div class="figma-embed-container">
+                    <iframe style="border: none;" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F1lL3CcJxd4aCE1kVUGKzaJ%2FCOFFEE-US-WEBSITE%3Fnode-id%3D0-1%26t%3DewlAgQcCsL5rFtu1-1" allowfullscreen></iframe>
+                </div>
+
+                <h4 class="modal-subtitle">
+                    <span>Interactive Prototype: SPACIO</span>
+                    <a href="https://www.figma.com/design/8HDhM6c5SQCCtr8MX5RVbz/SPACIO?node-id=0-1&t=wZtVJPuxoxvh7ikg-1" target="_blank" class="cta-button figma-btn">
+                        <i class="fab fa-figma"></i> Open in Figma
+                    </a>
+                </h4>
+                <div class="figma-embed-container">
+                    <iframe style="border: none;" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F8HDhM6c5SQCCtr8MX5RVbz%2FSPACIO%3Fnode-id%3D0-1%26t%3DwZtVJPuxoxvh7ikg-1" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal (Digital Designs) -->
+    <div id="modal-digital" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-digital')"><i class="fas fa-times"></i></span>
+            <div class="modal-body">
+                <h3 class="modal-title">Digital Artworks</h3>
+                <p>This section showcases a collection of digital artworks and creative outputs 
+                    developed through multimedia-related subjects and personal creative exploration. 
+                    These works reflect my growing skills in visual design, digital editing, composition, 
+                    and creative experimentation using various design tools and techniques. The artworks 
+                    presented were created primarily for academic and educational purposes, serving as 
+                    practice projects to enhance my creativity, technical abilities, and understanding 
+                    of digital media design.</p>
+                <h4 class="modal-subtitle">Artwork Previews</h4>
+                <div class="modal-gallery">
+                    <img src="images/da1.png" alt="Artwork Preview 1" onclick="openImageViewer(this.src)">
+                    <img src="images/da2.png" alt="Artwork Preview 2" onclick="openImageViewer(this.src)">
+                    <img src="images/da3.png" alt="Artwork Preview 3" onclick="openImageViewer(this.src)">
+                    <img src="images/da4.jpg" alt="Artwork Preview 4" onclick="openImageViewer(this.src)">
+                    <img src="images/da5.jpg" alt="Artwork Preview 5" onclick="openImageViewer(this.src)">
+                    <img src="images/da6.jpg" alt="Artwork Preview 6" onclick="openImageViewer(this.src)">
+                    <img src="images/da7.jpg" alt="Artwork Preview 7" onclick="openImageViewer(this.src)">
+                    <img src="images/da8.jpg" alt="Artwork Preview 8" onclick="openImageViewer(this.src)">
+                    <img src="images/da9.jpg" alt="Artwork Preview 9" onclick="openImageViewer(this.src)">
+                    <img src="images/da10.jpg" alt="Artwork Preview 10" onclick="openImageViewer(this.src)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal (App Dev) -->
+    <div id="modal-appdev" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-appdev')"><i class="fas fa-times"></i></span>
+            <div class="modal-body">
+                <h3 class="modal-title">App Dev - Survey Web System</h3>
+                <p>This is a survey web system that was created in our App Development subject.</p>
+                <p><strong>Overview:</strong> The system provides an intuitive platform designed for creating surveys, gathering user feedback, and managing respondent data efficiently.</p>
+                
+                <h4 class="modal-subtitle">System Previews</h4>
+                <div class="modal-gallery">
+                    <img src="images/ad1.png" alt="App Dev Preview 1" onclick="openImageViewer(this.src)">
+                    <img src="images/ad2.png" alt="App Dev Preview 2" onclick="openImageViewer(this.src)">
+                    <img src="images/ad3.png" alt="App Dev Preview 3" onclick="openImageViewer(this.src)">
+                    <img src="images/ad4.png" alt="App Dev Preview 4" onclick="openImageViewer(this.src)">
+                    <img src="images/ad5.png" alt="App Dev Preview 5" onclick="openImageViewer(this.src)">
+                    <img src="images/ad6.png" alt="App Dev Preview 6" onclick="openImageViewer(this.src)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Image Viewer -->
+    <div id="image-viewer" class="image-viewer">
+        <span class="close-viewer"><i class="fas fa-times"></i></span>
+        <span class="viewer-nav prev-btn" onclick="navigateViewer(-1, event)"><i class="fas fa-chevron-left"></i></span>
+        <span class="viewer-nav next-btn" onclick="navigateViewer(1, event)"><i class="fas fa-chevron-right"></i></span>
+        <img id="viewer-img" src="" alt="Fullscreen Preview">
+    </div>
+
+    <!-- Main Scripts -->
+    <script src="script.js"></script>
+
+</body>
+</html>
